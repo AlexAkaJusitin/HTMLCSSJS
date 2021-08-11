@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      body {
+        background-color: rgb(219, 183, 135);
+        font-family: Baskerville, Baskerville Old Face, Garamond,
+          Times New Roman, serif;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html"
+      ><img id="atop" height="256" src="../COFFE/images/logo.png" alt="logo"
+    /></a>
+    <h1 id="top">Contact</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="numbers.html">Numbers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <img
+      width="100%"
+      src="../COFFE/images/pexels-toni-cuenca-585750.jpg"
+      alt="background"
+    />
+    <h1>Contact Us</h1>
+    <form action="https://formspree.io/f/xnqlgyya" method="POST">
+      <!-- name -->
+      <label for="name">Name:</label>
+      <input placeholder="John" type="text" name="name" id="name" />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        placeholder="yourEmail@gmail.com"
+        type="email"
+        name="email"
+        id="email"
+      />
+      <br />
+      <br />
+      <label for="password">Password:</label>
+      <input
+        placeholder="skunk69$"
+        type="password"
+        name="password"
+        id="password"
+      />
+      <input type="checkbox" onclick="myFunction()" />Show
+      <script>
+        function myFunction() {
+          let x = document.getElementById("password");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+      </script>
+      <br />
+      <br />
+      <label for="textarea">Description</label>
+      <br />
+      <textarea
+        placeholder="Simple message/question!"
+        name="textarea"
+        id="textarea"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <input type="submit" value="OK!" />
+    </form>
+    <a href="#atop">Go back to the top</a>
+    <p>&copy;RAMY UNITED</p>
+  </body>
+</html>
